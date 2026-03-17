@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -48,6 +50,48 @@
   }
 }
 
+/* Enhanced Typography */
+@layer base {
+  html {
+    font-family: 'Hind Siliguri', 'Poppins', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Smooth Animations */
+@layer utilities {
+  .animate-slide-down {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  .group:hover .group-hover\:line-through {
+    text-decoration: line-through;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Remove scrollbar visibility issue */
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -77,9 +121,12 @@
   body * {
     visibility: hidden;
   }
-  .print-area, .print-area * {
+
+  .print-area,
+  .print-area * {
     visibility: visible;
   }
+
   .print-area {
     position: absolute;
     left: 0;

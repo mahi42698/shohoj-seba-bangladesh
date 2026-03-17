@@ -24,6 +24,9 @@ import ETinCertificatePage from "./pages/blog/ETinCertificatePage.tsx";
 import LandRecordCheckOnlinePage from "./pages/blog/LandRecordCheckOnlinePage.tsx";
 import CovidVaccineCertificateDownloadPage from "./pages/blog/CovidVaccineCertificateDownloadPage.tsx";
 import VgdVgfCardApplicationPage from "./pages/blog/VgdVgfCardApplicationPage.tsx";
+import NidCorrectionGuideMainPage from "./pages/blog/NidCorrectionGuideMainPage.tsx";
+import BirthCertCorrectionGuideMainPage from "./pages/blog/BirthCertCorrectionGuideMainPage.tsx";
+import PassportCheckOnlineGuideMainPage from "./pages/blog/PassportCheckOnlineGuideMainPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -54,6 +57,9 @@ const App = () => (
           <Route path="/blog/land-record-check-online" element={<LandRecordCheckOnlinePage />} />
           <Route path="/blog/covid-vaccine-certificate-download" element={<CovidVaccineCertificateDownloadPage />} />
           <Route path="/blog/vgd-vgf-card-application" element={<VgdVgfCardApplicationPage />} />
+          <Route path="/blog/nid-correction-guide" element={<NidCorrectionGuideMainPage />} />
+          <Route path="/blog/birth-cert-correction-guide" element={<BirthCertCorrectionGuideMainPage />} />
+          <Route path="/blog/passport-check-online" element={<PassportCheckOnlineGuideMainPage />} />
 
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
