@@ -13,6 +13,9 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center gap-6">
+          <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+            তথ্য
+          </Link>
           <Link to="/about-us" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
             আমাদের সম্পর্কে
           </Link>
