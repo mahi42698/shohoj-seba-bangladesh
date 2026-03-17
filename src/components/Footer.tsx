@@ -1,9 +1,10 @@
 import { Mail, Phone, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-foreground text-primary-foreground py-12 px-4">
-      <div className="container grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <h3 className="text-xl font-bold mb-4">ওয়েবসাইট সম্পর্কে</h3>
           <p className="opacity-80 text-base leading-relaxed">
@@ -43,6 +44,20 @@ const Footer = () => {
               <Facebook className="w-5 h-5" />
               <span>ফেসবুক পেজ</span>
             </a>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-xl font-bold mb-4">গুরুত্বপূর্ণ লিংক</h3>
+          <div className="space-y-2">
+            <Link to="/about-us" className="block opacity-80 hover:opacity-100 transition-opacity text-sm">
+              আমাদের সম্পর্কে
+            </Link>
+            <Link to="/contact-us" className="block opacity-80 hover:opacity-100 transition-opacity text-sm">
+              যোগাযোগ করুন
+            </Link>
+            <Link to="/privacy-policy" className="block opacity-80 hover:opacity-100 transition-opacity text-sm">
+              গোপনীয়তা নীতি
+            </Link>
           </div>
         </div>
       </div>

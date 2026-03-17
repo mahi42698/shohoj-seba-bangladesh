@@ -11,6 +11,9 @@ import BirthCertPage from "./pages/BirthCertPage.tsx";
 import ApplicationLetterPage from "./pages/ApplicationLetterPage.tsx";
 import IdCardPdfPage from "./pages/IdCardPdfPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.tsx";
+import AboutUsPage from "./pages/AboutUsPage.tsx";
+import ContactUsPage from "./pages/ContactUsPage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +31,9 @@ const App = () => (
           <Route path="/birth-certificate" element={<BirthCertPage />} />
           <Route path="/application-letter" element={<ApplicationLetterPage />} />
           <Route path="/id-card-pdf" element={<IdCardPdfPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
